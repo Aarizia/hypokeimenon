@@ -1,0 +1,30 @@
+.project-counter {
+    font-size: 1.15rem;
+    line-height: 1.2lh;
+    font-family: "Neue Montreal light";
+}
+
+.project-counter__current-number {
+    border-block-end: 1px solid var(--clr-primary-three);
+    color: var(--clr-primary-three);
+}
+
+.project-counter__total-number {
+    color: var(--clr-primary-three);
+}
+
+.project-category {
+    font-size: 1.2rem;
+    color: var(--clr-primary-three);
+}
+
+.project-heading {
+    font-size: 2.2rem;
+    padding-block-end: 1rem;
+}
+
+.project-text {
+    color: var(--clr-primary-three);
+    font-size: 1.1rem;
+    line-height: 1.3lh;
+}

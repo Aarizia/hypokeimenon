@@ -1,0 +1,10 @@
+:root {
+    --clr-primary-one: #212721;
+    --clr-primary-two: #ffffff;
+    --clr-primary-three: #878a8c;
+    --clr-secondary-one: #ffffff4d; /* 30% opacity */
+    --clr-secondary-two: #ffffff99; /* 60% opacity */
+    --clr-tertiary-one: #8B0000;
+    --clr-tertiary-two: #8b00004d;  /* 30% opacity */
+    --clr-tertiary-three: #8b000099;  /* 60% opacity */
+}

@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "PP Eiko thin";
+    src: url("/font/ppeiko-thin-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PP Eiko medium";
+    src: url("/font/ppeiko-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PP Eiko heavy";
+    src: url("/font/ppeiko-heavy-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Neue Montreal light";
+    src: url("/font/neuemontreal-light-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Neue Montreal regular";
+    src: url("/font/neuemontreal-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Neue Montreal medium";
+    src: url("/font/neuemontreal-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Neue Montreal heavy";
+    src: url("/font/neuemontreal-heavy-webfont.woff") format("woff");
+}
+
+
+/* --- reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 100;
+    color: var(--clr-primary-one);
+}
+
+html {
+    font-family: "Neue Montreal regular";
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* -- header --- */
+.header__logo {
+    text-decoration: none;
+}
+
+.header-menu__item {
+    list-style: none;
+}
+
+.header-menu__link {
+    text-decoration: none;
+}
+
+/* --- projects --- */
+.projects-list__item {
+    list-style: none;
+}
+
+/* --- footer --- */
+.footer__logo {
+    text-decoration: none;
+}
+
+/* --- other --- */
+.line-break {
+    display: block;
+}
+
+.grey {
+    color: var(--clr-primary-three);
+}
+
+.small-padding {
+    padding-block-start: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}

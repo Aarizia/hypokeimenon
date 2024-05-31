@@ -1,0 +1,70 @@
+.button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: right;
+    align-self: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: right;
+    align-self: center;
+}
+
+.full-screen-escape-button {
+    display: none;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 2rem;
+    z-index: -10;
+    background-color: var(--clr-secondary-one);
+}
+
+.escape-button__icon {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-self: center;
+    stroke: var(--clr-primary-one);
+}
+
+.full-screen-escape-button:hover {
+    background-color: var(--clr-secondary-two);
+}
+
+/* .full-screen-refresh-button {
+    display: none;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    top: 7rem;
+    right: 2.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 2rem;
+    z-index: -10;
+    background-color: var(--clr-secondary-one);
+}
+
+.refresh-button__icon {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-self: center;
+    stroke: var(--clr-primary-one);
+}
+
+.full-screen-refresh-button:hover {
+    background-color: var(--clr-secondary-two);
+} */

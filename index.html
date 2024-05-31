@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- p5 library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js" integrity="sha512-0zGLOFv/+OQ6YfVCSGDQWhrDRx0ONmBqWvs3gI4olm8i6xtKoG1FhEnB4eTaWCVnojyfUDgE8Izeln+mAJAkFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- functional javascript -->
+    <script src="/js/threeDotMenu.js" defer></script>
+    <script src="/js/scroll.js" defer></script>
+    <script src="/js/allProjects.js" defer></script>
+    <script src="/js/projects.js" defer></script>
+    <script src="/js/fullScreenButton.js" defer></script>
+    <!-- p5 sketces -->
+    <script src="/p5.js/logoAnimation.js" defer></script>
+    <script src="/p5.js/bubblesImgOne.js" defer></script>
+    <script src="/p5.js/bubblesImgTwo.js" defer></script>
+    <script src="/p5.js/bubblesImgThree.js" defer></script>
+    <script src="/p5.js/bubblesImgFour.js" defer></script>
+    <script src="/p5.js/randomDots.js" defer></script>
+    <script src="/p5.js/particleSystem.js" defer></script>
+    <script src="/p5.js/perlinNoise2d.js" defer></script>
+    <script src="/p5.js/perlinNoise3d.js" defer></script>
+    <title>Hypokeimenon</title>
+</head>
+<body>
+    
+    <div class="full-screen-project" id="fullScreenProject"></div>
+    <div class="full-screen-escape-button" id="fullScreenEscape">
+        <svg class="escape-button__icon" data-slot="icon" fill="red" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+        </svg>
+    </div>
+    <!-- <div class="full-screen-refresh-button" id="fullScreenRefresh">
+        <svg class="refresh-button__icon" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"></path>
+        </svg>
+    </div> -->
+
+    <div class="wrapper">
+        <header class="header" id="top">
+                <a href="/index.html">
+                    <div class="header__logo" id="logoContainer"></div>
+                </a>
+            <nav class="header__navigation">
+                <ul class="header-menu">
+                    <li class="header-menu__item"><a class="header-menu__link" href="#about">About</a></li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="#projects">Projects</a></li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="three-dot-menu menu-frame">
+                <div class="three-dot-menu__container menu-frame" id="threeDotMenu">
+                    <div class="three-dot-menu__dot menu-frame"></div>
+                    <div class="three-dot-menu__dot menu-frame"></div>
+                    <div class="three-dot-menu__dot menu-frame"></div>
+                </div>
+                <div class="hidden three-dot-menu-frame menu-frame" id="threeDotMenuFrame">
+                    <ul>
+                        <li class="three-dot-menu-frame__item menu-frame"><a class="three-dot-menu-frame__link menu-frame" href="#top">Top</a></li>
+                        <li class="three-dot-menu-frame__item menu-frame"><a class="three-dot-menu-frame__link menu-frame" href="#about">About</a></li>
+                        <li class="three-dot-menu-frame__item menu-frame"><a class="three-dot-menu-frame__link menu-frame" href="#projects">Projects</a></li>
+                        <li class="three-dot-menu-frame__item menu-frame"><a class="three-dot-menu-frame__link menu-frame" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="frontpage-main">
+            <section class="hero">
+                    <h1 class="hero-heading">Uncovering<span class="line-break">underlying<span class="line-break">patterns</span></span></h1>
+                    <div class="hero-image-container" id="imageContainer">
+                        <img width="2000" class="hero__image" id="heroImage" src="/img/perlin noise 3d.png" alt="random image">
+                    </div>
+            </section>
+
+            <section class="bio" id="about">
+                <section class="bio__images">
+                    <div class="bio__images-container">
+                        <div class="bio__images-container-left">
+                            <div class="bio__image-upper-left" id="bioContainerOne"></div>
+                            <!--<img class="bio__image-upper-left" id="bioContainerOne" src="https://picsum.photos/336/444?grayscale" alt="">-->
+                            <div class="bio__image-lower-left" id="bioContainerTwo"></div>
+                            <!--<img class="bio__image-lower-left" src="https://picsum.photos/168/220?grayscale" alt="">-->
+                        </div>
+                        <div class="bio__images-container-right">
+                            <div class="bio__image-upper-right" id="bioContainerThree"></div>
+                            <!--<img class="bio__image-upper-right" src="https://picsum.photos/124/168?grayscale" alt="">-->
+                            <div class="bio__image-lower-right" id="bioContainerFour"></div>
+                            <!--<img class="bio__image-lower-right" src="https://picsum.photos/208/300?grayscale" alt="">-->
+                        </div>
+                    </div>
+                </section>
+                <article class="bio__description">
+                    <h3 class="bio__heading">About</h3>
+                    <p class="bio__text">Hypokeimenon (Greek: ὑποκείμενον), later often material substratum, is a term in metaphysics which literally means the "underlying thing" (Latin: subiectum). To search for hypokeimenon is to search for that substance that persists in a thing going through change — its basic essence. <span class="line-break small-padding"> This is a collection of projects using mathemathics and digital visualization to explore randomness and different patterns in randomness. The aim is to model Nature's underlying patterns.</span></p>
+                </article>
+            </section>
+
+            <section class="projects" id="projects">
+                <h2 class="projects-heading">Latest <span class="line-break">Projects</span></h2>
+                <section class="projects-menu">
+                    <ul class="projects-list" id="projectLinksContainer">
+                        <li class="projects-list__item" id="projectOneLink">Random Dots</li>
+                        <li class="projects-list__item" id="projectTwoLink">Particle System</li>
+                        <li class="projects-list__item" id="projectThreeLink">Perlin Noise 2D</li>
+                        <li class="projects-list__item" id="projectFourLink">Perlin Noise 3D</li>
+                    </ul>
+                </section>
+                <div class="button-container all-projects-button__container" id="allProjectsButtonContainer">
+                    <button class="all-projects-button button">All projects</button>
+                    <div class="hidden all-projects-menu-frame" id="allProjectsMenuFrame">
+                        <ul>
+                            <li class="all-projects-menu-frame__item"><a class="all-projects-menu-frame__link" href="#">Project 1 full screen</a></li>
+                            <li class="all-projects-menu-frame__item"><a class="all-projects-menu-frame__link" href="#">Project 2 full screen</a></li>
+                            <li class="all-projects-menu-frame__item"><a class="all-projects-menu-frame__link" href="#">Project 3 full screen</a></li>
+                            <li class="all-projects-menu-frame__item"><a class="all-projects-menu-frame__link" href="#">Project 4 full screen</a></li>
+                            <li class="all-projects-menu-frame__item"><a class="all-projects-menu-frame__link" href="#">Project 5 full screen</a></li>
+                            <li class="all-projects-menu-frame__item"><a class="all-projects-menu-frame__link" href="#">Project 6 full screen</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="project" id="sectionOneContainer">
+                    <div class="project-counter">
+                        <p data-counter="1" class="project-counter__current-number">1</p>
+                        <p class="project-counter__total-number">4</p>
+                    </div>
+                    <div class="project-image-category">
+                        <div class="project-image-container" id="projectImageContainer">
+                            <div class="project-container" id="projectOneContainer"></div>
+                        </div>
+                        <p class="project-category">uniform distribution of randomness</p>
+                    </div>
+                    <section class="project__description" id="projectDescription">
+                        <h3 class="project-heading">Random Dots</h3>
+                        <p class="project-text">A display of uniform distribution of randomness<span class="line-break grey small-padding">The dots appear at random x- and y-coordinates. The position of the individual dots are not related to the positions of other dots in the canvas</span></p>
+                    </section>
+                    <button class="full-screen-button button">Full screen</button>
+                </section>
+                <section class="project" id="sectionTwoContainer">
+                    <div class="project-counter">
+                        <p data-counter="2" class="project-counter__current-number">2</p>
+                        <p class="project-counter__total-number">4</p>
+                    </div>
+                    <div class="project-image-category">
+                        <div class="project-image-container" id="projectImageContainer">
+                            <div class="project-container" id="projectTwoContainer"></div>
+                        </div>
+                        <p class="project-category">every object relates to the position of the other objects</p>
+                    </div>
+                    <section class="project__description" id="projectDescription">
+                        <h3 class="project-heading">Particle System</h3>
+                        <p class="project-text">A particle system is a technique in game physics and motion graphics that uses many graphic objects to simulate certain kinds of "fuzzy" phenomena - usually highly chaotic systems, natural phenomena, or processes caused by chemical reactions. The system is defined as a group of points in space, guided by a collection of rules defining behavior and appearance.<span class="line-break grey small-padding">Particle systems can be used to replicate the phenomena of fire, explosions, smoke, moving water, sparks, falling leaves, clouds, fog, snow, dust, meteor tails, stars and galaxies, or abstract visual effects like glowing trails, magic spells and more.</span></p>
+                    </section>
+                    <button class="full-screen-button button">Full screen</button>
+                </section>
+                <section class="project" id="sectionThreeContainer">
+                    <div class="project-counter">
+                        <p data-counter="3" class="project-counter__current-number">3</p>
+                        <p class="project-counter__total-number">4</p>
+                    </div>
+                    <div class="project-image-category">
+                        <div class="project-image-container" id="projectImageContainer">
+                            <div class="project-container" id="projectThreeContainer"></div>
+                        </div>
+                        <p class="project-category">non-uniform distribution of randomness</p>
+                    </div>
+                    <section class="project__description" id="projectDescription">
+                        <h3 class="project-heading">Perlin Noise 2D</h3>
+                        <p class="project-text">Perlin noise is a type of gradient noise developed by Ken Perlin in 1983. It has many uses, including but not limited to: procedurally generating terrain, applying pseudo-random changes to a variable, and assisting in the creation of image textures. It is most commonly implemented in two, three, or four dimensions, but can be defined for any number of dimensions.<span class="line-break grey small-padding">Perlin noise in two dimensions generates a smooth randomness of numbers on the y-axis, where every y-position is related to both of the y-positions that come before and after. The second dimension is time</span></p>
+                    </section>
+                    <button class="full-screen-button button">Full screen</button>
+                </section>
+                <section class="project" id="sectionFourContainer">
+                    <div class="project-counter">
+                        <p data-counter="1" class="project-counter__current-number">4</p>
+                        <p class="project-counter__total-number">4</p>
+                    </div>
+                    <div class="project-image-category">
+                        <div class="project-image-container" id="projectImageContainer">
+                            <div class="project-container" id="projectFourContainer"></div>
+                        </div>
+                        <p class="project-category">non-uniform distribution of randomness</p>
+                    </div>
+                    <section class="project__description" id="projectDescription">
+                        <h3 class="project-heading">Perlin Noise 3D</h3>
+                        <p class="project-text">Perlin noise is a type of gradient noise developed by Ken Perlin in 1983. It has many uses, including but not limited to: procedurally generating terrain, applying pseudo-random changes to a variable, and assisting in the creation of image textures. It is most commonly implemented in two, three, or four dimensions, but can be defined for any number of dimensions.<span class="line-break grey small-padding">Perlin noise in three dimensions generates a smooth randomness of numbers on the x- and y-axis, where every x- and y-position is related to all the x- and y-positions around it on the two-dimensional plane. The third dimension is time</span></p>
+                    </section>
+                        <button class="full-screen-button button">Full screen</button>
+                </section>
+            </section>
+
+            <section class="contact border"  id="contact">
+                <p class="contact__email">curiosity@hypokeimenon.com</p>
+                <p class="contact__location">Copenhagen, Denmark</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <a class="footer__logo" href="index.html">Hypokeimenon</a>
+            <p class="footer__contact">curiosity@hypokeimenon.com</p>
+            <p class="footer__copyright">&copy;2024</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.hero-heading {
+    font-size: 10rem;
+    font-family: "PP Eiko medium";
+    text-align: center;
+}
+
+.hero-image-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.hero__image {
+    object-fit: cover;
+    width: 40vw;
+    height: 90vh;
+}

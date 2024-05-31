@@ -1,0 +1,50 @@
+.projects {
+    padding-block-start: 5rem;
+}
+
+.projects-heading {
+    font-family: "PP Eiko medium";
+    font-size: 8rem;
+}
+
+.projects-list__item {
+    font-size: 1.2rem;
+    color: var(--clr-primary-three);
+    line-height: 1.5lh;
+    cursor: pointer;
+}
+
+.projects-list__item:hover {
+    color: var(--clr-primary-one);
+    list-style: disc;
+}
+
+.all-projects-button__container {
+    position: relative;
+}
+
+.all-projects-menu-frame {
+    position: absolute;
+    top: 2rem;
+    border-radius: 0.5rem;
+    padding-block-start: 0.5rem;
+}
+
+.all-projects-menu-frame__item {
+    list-style: none;
+    height: 1.5rem;
+}
+
+.all-projects-menu-frame__link {
+    text-decoration: none;
+    color: var(--clr-primary-three);
+}
+
+.all-projects-menu-frame__item:hover {
+    color: var(--clr-primary-one);
+    list-style: disc;
+}
+
+.all-projects-menu-frame__link:hover {
+    color: var(--clr-primary-one);
+}

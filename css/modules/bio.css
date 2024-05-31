@@ -1,0 +1,10 @@
+.bio__heading {
+    font-family: "PP Eiko medium";
+    font-size: 2.8rem;
+    padding-block-end: 2rem;
+}
+
+.bio__text {
+    font-size: 1.2rem;
+    line-height: 1.75lh;
+}
