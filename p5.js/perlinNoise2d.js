@@ -44,3 +44,7 @@ const perlinNoise = (sketch) => {
 }
 
 new p5(perlinNoise);
+
+// credit for code and design to Daniel Shiffman in
+// book: The Nature of Code and
+// youtube tutorial channel: The Coding Train
