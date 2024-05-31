@@ -1,14 +1,14 @@
-@import url(css/variables.css);
-@import url(css/layout.css);
-@import url(css/base.css);
+@import url(/variables.css);
+@import url(/layout.css);
+@import url(/base.css);
 
 /* --- modules --- */
-@import url(css/modules/header.css);
-@import url(css/modules/three-dot-menu.css);
-@import url(css/modules/hero.css);
-@import url(css/modules/bio.css);
-@import url(css/modules/projects.css);
-@import url(css/modules/project-card.css);
-@import url(css/modules/button.css);
-@import url(css/modules/contact.css);
-@import url(css/modules/footer.css);
+@import url(/modules/header.css);
+@import url(/modules/three-dot-menu.css);
+@import url(/modules/hero.css);
+@import url(/modules/bio.css);
+@import url(/modules/projects.css);
+@import url(/modules/project-card.css);
+@import url(/modules/button.css);
+@import url(/modules/contact.css);
+@import url(/modules/footer.css);
