@@ -1,36 +1,36 @@
 @font-face {
     font-family: "PP Eiko thin";
-    src: url("/font/ppeiko-thin-webfont.woff") format("woff");
+    src: url("../font/ppeiko-thin-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: "PP Eiko medium";
-    src: url("/font/ppeiko-medium-webfont.woff") format("woff");
+    src: url("../font/ppeiko-medium-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: "PP Eiko heavy";
-    src: url("/font/ppeiko-heavy-webfont.woff") format("woff");
+    src: url("../font/ppeiko-heavy-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: "Neue Montreal light";
-    src: url("/font/neuemontreal-light-webfont.woff") format("woff");
+    src: url("../font/neuemontreal-light-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: "Neue Montreal regular";
-    src: url("/font/neuemontreal-regular-webfont.woff") format("woff");
+    src: url("../font/neuemontreal-regular-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: "Neue Montreal medium";
-    src: url("/font/neuemontreal-medium-webfont.woff") format("woff");
+    src: url("../font/neuemontreal-medium-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: "Neue Montreal heavy";
-    src: url("/font/neuemontreal-heavy-webfont.woff") format("woff");
+    src: url("../font/neuemontreal-heavy-webfont.woff") format("woff");
 }
 
 
