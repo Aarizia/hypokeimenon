@@ -89,3 +89,7 @@ const bubblesThree = (sketch) => {
 }
 
 new p5(bubblesThree);
+
+// credit for code and design to Daniel Shiffman in
+// book: The Nature of Code and
+// youtube tutorial channel: The Coding Train
