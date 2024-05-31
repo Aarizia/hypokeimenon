@@ -25,3 +25,7 @@ const randomDots = (sketch) => {
 }
 
 new p5(randomDots);
+
+// credit for code and design to Daniel Shiffman in
+// book: The Nature of Code and
+// youtube tutorial channel: The Coding Train
