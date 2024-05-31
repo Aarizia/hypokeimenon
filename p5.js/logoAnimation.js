@@ -9,7 +9,7 @@ const logoSketch = (sketch) => {
     let img;
 
     sketch.preload = function() {
-        img = sketch.loadImage("../img/hypoHvidXsmall.png");
+        img = sketch.loadImage("img/hypoHvidXsmall.png");
     }
 
     sketch.setup = function() {
