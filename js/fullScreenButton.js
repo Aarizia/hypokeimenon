@@ -25,7 +25,7 @@ projects.addEventListener('click', function(e) {
         // fullScreenRefreshButton.style.display = 'flex';
         // fullScreenRefreshButton.style.zIndex = '+10';
 
-        if (sectionElement == 'sectionOneContainer') {
+        if (sectionElement == 'sectionTwoContainer') {
 
             const particleSystemFS = (sketch) => {
             
@@ -79,9 +79,9 @@ projects.addEventListener('click', function(e) {
 
         };
 
-        if (sectionElement == 'sectionTwoContainer') {
+        if (sectionElement == 'sectionThreeContainer') {
 
-            const perlinNoiseFS = (sketch) => {
+            const perlinNoise2dFS = (sketch) => {
 
                 let inc = 0.01;
                 let start = 0;
@@ -119,11 +119,11 @@ projects.addEventListener('click', function(e) {
                 }
             }
 
-            new p5(perlinNoiseFS);
+            new p5(perlinNoise2dFS);
 
         }
 
-        if (sectionElement == 'sectionThreeContainer') {
+        if (sectionElement == 'sectionFourContainer') {
 
             const perlinNoise3dFS = (sketch) => {
             
@@ -227,7 +227,7 @@ projects.addEventListener('click', function(e) {
 
         }
 
-        if (sectionElement == 'sectionFourContainer') {
+        if (sectionElement == 'sectionOneContainer') {
 
             const randomDots = (sketch) => {
 
